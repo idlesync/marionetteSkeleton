@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unit Tests</title>
+
+    <link rel="stylesheet" href="stylesheets/test.css" />
+
+    <!--<script src="//bakerfurnace-c9-idlesync.c9.io:35730/livereload.js"></script>-->
+
+    <script src="../../javascripts/vendor.js"></script>
+    <script src="javascripts/unit-tests-vendor.js"></script>
+
+    <script src="../../javascripts/templates.js"></script>
+
+    <!-- files under test go here -->
+    <!-- general -->
+    <script src="javascripts/application.js"></script>
+    <script src="javascripts/config.js"></script>
+    <script src="javascripts/index.js"></script>
+    <!-- end general -->
+
+    <!-- routers -->
+    <script src="javascripts/routers/Base.js"></script>
+    <script src="javascripts/routers/home.js"></script>
+    <!-- end routers -->
+
+    <!-- controllers -->
+    <script src="javascripts/controllers/Base.js"></script>
+    <script src="javascripts/controllers/home.js"></script>
+    <!-- end controllers -->
+
+    <!-- views -->
+    <script src="javascripts/views/home/Content.js"></script>
+    <!-- end views -->
+
+    <!-- modules-->
+    <script src="javascripts/modules/homeContent.js"></script>
+    <!-- end modules-->
+
+    <script src="javascripts/unit-tests.js"></script>
+    <script>
+      $(function () {
+        require('test/unit/initialize');
+      });
+    </script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+
+    <!-- testing junk -->
+    <div style="display: none;">
+      <div id="content"></div>
+    </div>
+  </body>
+</html>
